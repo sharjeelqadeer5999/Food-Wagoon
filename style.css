@@ -1,0 +1,1133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  :root {
+    /* Colors */
+    --theme-white: #fff;
+    --theme-gray-600: #757575;
+    --theme-gray-900: #212121;
+    --theme-gray-100: #f5f5f5;
+    --color-darkslategray-100: #434343;
+    --theme-gray-800: #424242;
+    --color-darkgray-100: #adadad;
+    --theme-gray-500: #9e9e9e;
+    --theme-gray-700: #616161;
+    --theme-primary: #ffb30e;
+    --color-orange-100: #ffb20e;
+    --color-orange-200: #faaa01;
+    --gradient-3: #ff9f00;
+    --color-blanchedalmond: #feefd0;
+    --color-darkgoldenrod-100: #cc8000;
+    --color-darkgoldenrod-200: #c77800;
+    --theme-success: #79b93c;
+    --color-yellowgreen-100: rgba(121, 185, 60, 0.2);
+    --color-olivedrab: rgba(97, 161, 36, 0.2);
+    --theme-warning: #f17228;
+    --color-chocolate-100: #d9590f;
+    --color-chocolate-200: rgba(217, 89, 15, 0.2);
+    --color-chocolate-300: rgba(241, 114, 40, 0.2);
+  
+    /* Effects */
+    --button-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24),
+      0px 14px 32px rgba(255, 178, 14, 0.29);
+    --shadow: 0px 14px 15px rgba(124, 124, 124, 0.06),
+      0px 27px 82px rgba(124, 124, 124, 0.28);
+    --object-shadow: 0px 14px 15px rgba(255, 173, 0, 0.01),
+      0px 27px 82px rgba(255, 173, 0, 0.28);
+  }
+/* =============================responsive at 1200px====================== */
+/* ===============================root-container======================== */
+.root-container{
+  max-width: 100vw;
+  min-height: 100vh;
+}
+/* ------------------------------Header--------------------------------- */
+nav{
+  background-color: var(--theme-white);
+  min-height: 3.1rem;
+}
+.brand-logo{
+  display: inline-block;
+}
+.brand-logo img{
+  height: 1.6rem;
+  margin: 0.8rem 0rem -0.4rem 9rem
+}
+.nav-items{
+  display: inline-flex;
+}
+.nav-item-1, .nav-item-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-item-1{
+  margin-right: 5.4rem;
+}
+.nav-item-1 img{
+  margin: .2rem .2rem 0 .5rem;
+  max-height: .75rem;
+}
+.nav-item-1 li, .nav-item-2 li{
+  list-style-type: none;
+}
+.nav-item-1 span{
+  font-size: .75rem;
+}
+.nav-item-1 p{
+  margin-top: .05rem;
+  font-size: .80rem;
+  margin: 0 .2rem;
+}
+.nav-item-1 span, .nav-item-2 span{
+  font-weight: 900;
+}
+.nav-item-2 img{
+  padding: 0 0.38rem 0 0.6rem;
+  max-height: .75rem;
+}
+.nav-item-2 input{
+  color: black;
+  border: none;
+  max-width: 5.9rem;
+  font-weight: 900;
+  font-size: 0.7rem;
+  margin-right: 0.2rem;
+  min-height: 1.3rem;
+}
+.nav-item-2 li:nth-child(1), .nav-item-2 button{
+  display: flex;
+  align-items: center;
+}
+.nav-item-2 button{
+  color: var(--gradient-3);
+  border: none;
+  background-color: var(--theme-white);
+  box-shadow: var(--button-shadow);
+  border-radius: .3rem;
+  padding: .25rem;
+  min-height: 1.9rem;
+  margin-bottom: 0.1rem;
+}
+.nav-item-2 button span{
+  margin-right: 0.6rem;
+  font-size: 0.7rem;
+}
+/* ==============================toggle button====================== */
+.toggle-btn{
+  /* display: none; */
+}
+#checkbtn{
+  float: right;
+  /* display: none; */
+}
+/* #checkbtn img{
+  max-height: 2.7rem;
+  margin: 0.3rem 1.5rem 1rem 0rem;
+}
+#check{
+  display: none;
+}
+nav ul{
+  max-width: 100%;
+  min-height: 50vh;
+} */
+/* -------------------------------header-are-you-straving--------------------- */
+.are-you-straving{
+  max-width: 100%;
+  min-height: 24rem;
+  background-color: var(--theme-primary);
+  position: relative;
+}
+.are-you-straving-content{
+  position: absolute;
+  margin-left: 8.9rem;
+  padding-top: 6rem;
+}
+.are-you-straving-content h1{
+  font-size: 2.87rem;
+  color: var(--theme-white);
+  font-weight: 900;
+}
+.are-you-straving-content p{
+  font-size: 0.80rem;
+  padding: 0.3rem 0 1.2rem 0;
+  color: var(--color-darkslategray-100);
+}
+.food-delivery-pickup-content{
+  min-width: 34rem;
+  max-height: 8rem;
+  background-color: var(--theme-white);
+  border-radius: 0.7rem;
+}
+.delivery-pickup{
+  display: flex;
+  align-items: center;
+  padding: 0.7rem;
+  padding-bottom: 0.8rem;
+}
+.delivery-pickup button{
+  border: none;
+  font-weight: bold;
+  font-size: .58rem;
+  margin-left: 0.1rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  min-height: 1.3rem;
+  min-width: 5.2rem;
+}
+.delivery-pickup img{
+  max-height: .52rem;
+  margin-right: .4rem;
+  margin-left: 0.5rem;
+}
+.delivery{
+  display: flex;
+  align-items: center;
+  background-color: var(--color-blanchedalmond);
+  color: var(--color-chocolate-100);
+}
+.pickup{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.location-food{
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  border-top: .1rem solid var(--theme-gray-100);
+}
+.location{
+  display: flex;
+  align-items: center;
+  background-color: var(--theme-gray-100);
+  max-height: 1.7rem;
+  min-width: 24.1rem;
+  margin: 0px 0.8rem;
+  border-radius: .25rem;
+}
+.location img{
+  max-height: 1.5rem;
+  padding: 0.2rem;
+  margin: 0.4rem 0 0.4rem 0.4rem;
+}
+.location input{
+  border: none;
+  background-color: var(--theme-gray-100);
+  font-size: 0.7rem;    
+  min-height: 1.4rem;
+  min-width: 22.1rem;
+  padding-left: 0.5rem;
+}
+.food img{
+  max-height: 0.75rem;
+  padding: 0.1rem;
+  margin: 0.3rem;
+  margin-left: 1.6rem;
+}
+.food button{
+  display: flex;
+  align-items: center;
+  color: var(--theme-white);
+  background-color: tomato;
+  min-height: 2.1rem;
+  min-width: 7.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  border: none;
+}
+.straving-logo{
+  position: absolute;
+  max-height: 16.03rem;
+  min-width: 12rem;
+  left: 48.4rem;
+  top: 8rem;
+  overflow: hidden;
+}
+.straving-logo img{
+  max-height: 18rem;
+}
+.straving-logo:hover{
+  overflow: visible;
+  top: 6rem;
+}
+/* ===============================food-deal-card======================== */
+#food-deal{
+    min-height: 22rem;
+    max-width: 100%;
+}      
+.food-deal-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      max-width: 57rem;
+      column-gap: 0.5rem;
+      margin: auto;
+      padding-top: 3rem;
+  }
+  .food-deal-card{
+    position: relative;
+  }
+  .food-deal-main img{
+    width: 13.8rem;
+    border-radius: 0.7rem;
+  }
+  .food-deal-card .percentage{
+    padding-left: 0.25rem;
+    }
+  .food-deal-card .percentage-symble{
+    font-size: 0.9rem;
+    margin-left: 0.1rem;
+    }
+    .food-deal-card .discount .discountvalue{
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .food-deal-card .discount{
+      display: flex;
+      align-items: center;
+      min-height: 3.1rem;
+      min-width: 5rem;
+      padding: 0.15rem 0 0 0.4rem;
+      border-radius: 0 0.7rem 0 0.7rem;
+      font-weight: bold;
+      position: absolute;
+      bottom: 4.15rem;
+      color: white;
+      background-color: var(--theme-primary);
+    }
+    .food-deal-card h5{
+        margin-top: 0.7rem;
+        font-weight: 900;
+        font-size: 0.8rem;
+    }
+    .food-deal-card button{
+        font-size: 0.7rem;
+        font-weight: 900;
+        margin-top: 0.5rem;
+        min-width: 8rem;
+        min-height: 1.6rem;
+        border-style: none;
+        border-radius: 0.4rem;
+        background-color: var(--color-blanchedalmond);
+        color: var(--theme-warning);
+        cursor: pointer;
+    }
+      /* -----------------------------------how-does-it-work------------------------------- */
+
+  #how-does-it-work{
+    background-image: linear-gradient(blanchedalmond, white);
+    max-width: 100%;
+    min-height: 28rem;
+    text-align: center;
+  }
+  #how-does-it-work h1{
+    font-weight: 900;
+    color: var(--theme-warning);
+    padding: 3rem 0;
+  }
+  .how-does-it-work-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    max-width: 55rem;
+    column-gap: 0.5rem;
+    margin: auto;
+  }
+  .how-does-it-work-card{
+    max-height: 11rem;
+    max-width: 11.5rem;
+    text-align: center;
+  }
+  .how-does-it-work-card img{
+    max-height: 6rem;
+  }
+  .how-does-it-work-card:nth-child(1) img{
+    max-height: 3.5rem;
+    margin: 0.6rem 0 1.9rem 0;
+  }
+  .how-does-it-work-card h5{
+    padding-bottom: .5rem;
+  }
+  .how-does-it-work-card p{
+    line-height: 1.5;
+    font-size: 0.75rem;
+    color: var(--color-darkgray-100);
+  }
+  /* -------------------------------popular-items----------------------------------- */
+#popular-items{
+  max-width: 100%;
+  min-height: 27rem;
+}
+#popular-items h1{
+  font-weight: 900;
+  text-align: center;
+  color: var(--theme-gray-900);
+  padding-bottom: 4rem;
+}
+.popular-items-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popular-items .less-greater-icon{
+  padding: 2rem;
+}
+#popular-items .less-greater-icon p{
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-primary);
+  margin-bottom: 6rem;
+}
+#popular-items .less-greater-icon a{
+  color: var(--theme-white);
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+}
+.popular-items-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 0.5rem;
+  max-width: 57.6rem;
+}
+.popular-items-card-main img{
+  max-width: 11.23rem;
+  border-radius: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+.popular-items-card h5{
+  font-size: 0.70rem;
+  font-weight: 900;
+}
+.popular-items-card-icon{
+  display: flex;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+.popular-items-card-icon img{
+  max-height: 0.70rem;
+  margin-right: 0.3rem;
+}
+.popular-items-card-icon p{
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding-left: 0.1rem;
+  color: var(--theme-primary);
+}
+.popular-items-card button{
+  margin-top: 0.5rem;
+  font-size: 0.5rem;
+  font-weight: bold;
+  min-width: 100%;
+  min-height: 1.8rem;
+  border-style: none;
+  border-radius: 0.3rem;
+  color: var(--theme-white);
+  background-color: var(--theme-warning);
+  cursor: pointer;
+}
+/* ------------------------------featured resturants----------------------------- */
+#featured-resturants{
+  max-width: 100%;
+  min-height: 55rem;
+}
+#featured-resturants h1{
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 3.5rem;
+}
+.featured-resturants-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 57rem;
+  column-gap: 0.5rem;
+  row-gap: 2.5rem;
+  margin: auto;
+}
+.featured-resturants-card{
+  position: relative;
+}
+.featured-resturants-main img{
+  width: 14rem;
+  border-radius: 0.7rem;
+}
+.featured-resturants-card .discount{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 16.1rem;
+}
+.featured-resturants-card .discount img{
+  height: 0.6rem;
+  padding-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+.featured-resturants-card .discount p{
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: var(--theme-white);
+  display: inline;
+  margin-right: 0.6rem;
+}
+.featured-resturants-card .discount .card-1st{
+  background-color: var(--theme-warning);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 0.8rem;
+  border-radius: 0.3rem;
+  min-width: 4.3rem;
+  min-height: 1.3rem;
+}
+.featured-resturants-card .discount .card-2nd{
+  background-color: var(--theme-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 0.3rem;
+  border-radius: 0.3rem;
+  min-width: 3.4rem;
+  min-height: 1.3rem;
+}
+.featured-resturants-card .food-like{
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+.food-like img{
+  max-height: 2.5rem;
+}
+.food-like-description{
+  margin: 0 0 0 1rem;
+}
+.food-like-description p{
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+.food-like-description img{
+  max-height: 1rem;
+  margin: 0.2rem 0.1rem 0 0;
+}
+.food-like-description span{
+  color: var(--theme-primary);
+  font-size: 0.8rem;
+  vertical-align: text-top;
+}
+.featured-resturants-card .btn-open-tomorrow{
+  font-weight: 900;
+  font-size: 0.8rem;
+  margin-top: 1.3rem;
+  min-width: 8.2rem;
+  min-height: 1.7rem;
+  border-style: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-blanchedalmond);
+  color: var(--theme-warning);
+  cursor: pointer;
+}
+.featured-resturants-card .btn-open-now{
+  font-weight: 900;
+  font-size: 0.8rem;
+  margin-top: 1.3rem;
+  min-width: 5.7rem;
+  min-height: 1.7rem;
+  border-style: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-yellowgreen-100);
+  color: var(--theme-success);
+  cursor: pointer;
+}
+.featured-resturants-card .btn-open-tomorrow{
+  display: none;
+}
+.featured-resturants-card:nth-child(1) .btn-open-tomorrow{
+  display: block;
+}
+.featured-resturants-card:nth-child(2) .btn-open-tomorrow{
+  display: block;
+}
+.featured-resturants-card:nth-child(1) .btn-open-now{
+  display: none;
+}
+.featured-resturants-card:nth-child(2) .btn-open-now{
+  display: none;
+}
+#featured-resturants .view-all{
+  border: none;
+  background: var(--color-orange-200);
+  border-radius: .3rem;
+  min-height: 2rem;
+  min-width: 6rem;
+  display: block;
+  margin: auto;
+  margin-top: 3.5rem;
+}
+#featured-resturants .view-all a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.55rem;
+  color: var(--theme-white);
+}
+#featured-resturants .view-all span{
+  font-weight: bold;
+  color: var(--theme-white);
+  padding: .2rem;
+}
+/* ------------------------------search-by-food---------------------------------------- */
+  #search-by-food{
+  min-width: 100%;
+  min-height: 23rem;
+  background-color: var(--theme-gray-100);
+  }
+  #search-by-food h2{
+    font-weight: 800;
+    font-size: 1.3rem;
+  }
+  #search-by-food .search-view-all{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.5rem;
+    max-width: 56rem;
+    margin: auto;
+    padding-bottom: 4rem;
+  }
+  #search-by-food .view-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-view-all button{
+    border: none;
+    background-color: transparent;
+  }
+  .search-view-all button a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.6rem;
+    color: var(--theme-primary);
+  }
+  .search-view-all button span{
+    font-weight: bold;
+    color: var(--theme-primary);
+    padding: .3rem;
+  }  
+  #search-by-food .less-greater-icon{
+    margin-left: 0.6rem;
+  }
+  #search-by-food .less-greater-icon p{
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-primary);
+  }
+  #search-by-food .less-greater-icon a{
+    color: var(--theme-white);
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .search-by-food-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 57rem;
+    margin: auto;
+    column-gap: 1.3rem;
+  }
+  .search-by-food-card{
+    max-width: 8.7rem;
+    max-height: 12rem;
+  }
+  .search-by-food-card IMG{
+    width: 8.4rem;
+    cursor: pointer;
+  }
+  .search-by-food-card p{
+    font-weight: 900;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  /* ----------------------------install-the-app------------------------------------- */
+  #install-the-app{
+    background-color: var(--theme-primary);
+    min-width: 100%;
+    min-height: 41rem;
+    position: relative;
+    z-index: -1;
+  
+  }
+  .install-the-app-frame img{
+    max-width: 135.6%;
+    margin-left: -16rem;
+    min-height: 37.8rem;
+    position: absolute;
+  }
+  .daily-discount-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 49.5rem;
+    min-height: 9rem;
+    border-radius: 2rem;
+    background-color: var(--theme-white);
+    position: absolute;
+    left: 12.9rem;
+    margin-top: 5rem;
+    box-shadow: var(--object-shadow);
+  }
+  .daily-discount-content .daily-discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.1rem;
+  }
+  .daily-discount-content .daily-discount img{
+    max-height: 5rem;
+  }
+  .daily-discount-content h4{
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-right: 2.2rem;
+    padding-left: 1.5rem;
+    background: linear-gradient(to right, var(--theme-warning), var(--theme-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .daily-discount:nth-child(1) img{
+    margin-left: 2rem;
+
+  }
+  .daily-discount-content .border-right{
+    border-right: 1px solid var(--theme-gray-500);
+    min-height: 3rem;
+  }
+  .install{
+    min-height: 12rem;
+    max-width: 18rem;
+    position: absolute;
+    left: 43rem;
+    bottom: 5.6rem;
+  }
+  .your-order img{
+    position: absolute;
+    max-height: 29.8rem;
+    bottom: -9rem;
+    left: 12.9rem;
+  }
+  
+  .install h1{
+    font-size: 2.1rem;
+    font-weight: 900;
+    background: linear-gradient(to right, var(--theme-primary), var(--theme-warning));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .install p{
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: var(--theme-gray-600);
+    padding: .5rem 0 .6rem  0;
+  }
+  .install-btn{
+    display: flex;
+    align-content: center;
+  }
+  .install-btn button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .install-1st-btn img{
+      max-width: 11rem;
+      margin-left: -1.5rem;
+  }
+  .install-2nd-btn img{
+      max-width: 10.4rem;
+      margin-left: -2.75rem;
+  }
+  /* -----------------------------deal-crispy--------------------- */
+#deal-crispy{
+  max-width: 100%;
+  min-height: 72rem;
+  padding: 5rem 0 0 0;
+  background-color: var(--theme-white);
+}
+.deal-crispy-card{
+  display: flex;
+  max-width: 57rem;
+  max-height: 20rem;
+  margin: auto;
+  box-shadow: var(--shadow);
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.deal-crispy-card-content{
+  padding: 2.1rem;
+  min-height: 20.4rem;
+  min-width: 21rem;
+}
+.deal-crispy-card-content h1{
+  font-size: 1.45rem;
+  font-weight: 900;
+}
+.deal-crispy-card-content h1 span{
+  color: var(--theme-primary);
+}
+.deal-crispy-card-content p{
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--theme-gray-500);
+  padding: 1rem 0 5rem 0;
+}
+.deal-crispy-card-content button{
+  min-height: 2.3rem;
+  min-width: 100%;
+  border-radius: .3rem;
+  border: none;
+  background-color: var(--color-orange-200);
+  color: var(--theme-white);
+  cursor: pointer;
+}
+.deal-crispy-card-content button a{
+  text-decoration: none;
+  color: var(--theme-white);
+  font-weight: 700;
+  font-size: 0.65rem;
+  letter-spacing: 0.05rem;
+}
+.deal-crispy-card-content button a span{
+  margin: 0.3rem;
+}
+.deal-crispy-card img{
+  object-fit: cover;
+  overflow: hidden;
+  max-height: 20.4rem;
+  border-radius: 0rem .5rem 0.5rem 0rem;
+}
+.deal-crispy-card:nth-child(2) img{
+  order: -1;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.deal-crispy-card:nth-child(2){
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.deal-crispy-card:nth-child(1) .deal-crispy-card-content h1{
+  padding: 1.2rem 0 0 0;
+}
+/* -----------------------------best-deal----------------------- */
+#best-deal{
+  width: 100%;
+  height: 20rem;
+  position: relative;
+}
+#best-deal img{
+  width: 100%;
+  height: 20rem;
+}
+.best-deal-content{
+  height: 14rem;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3rem;
+  margin: 0 21rem;
+}
+.best-deal-content h1{
+  text-align: center;
+  color: var(--theme-white);
+  padding-bottom: 2.5rem;
+  font-size: 1.85rem;
+  font-weight: 900;
+}
+.best-deal-content button{
+  min-height: 2.4rem;
+  min-width: 9.5rem;
+  border-radius: .3rem;
+  border: none;
+  background-color: var(--color-chocolate-100);
+  color: var(--theme-white);
+  cursor: pointer;
+}
+.best-deal-content button a{
+  text-decoration: none;
+  color: var(--theme-white);
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+.best-deal-content button a span{
+  margin: 0.1rem;
+}
+/* -------------------------------footer------------------------------------- */
+footer{
+  background-color: black;
+  color: var(--theme-white);
+  max-width: 100%;
+  min-height: 42rem;
+}
+.footer-content{
+  min-height: 35rem;
+  max-width: 57rem;
+  margin: auto;
+}
+.footer-content h4{
+  padding: 4.5rem 0 1.7rem 0;
+}
+.footer-content li{
+  list-style-type: none;
+}
+.footer-content a{
+  text-decoration: none;
+  color: var(--theme-gray-500);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+footer .footer-content .cities{
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  padding-bottom: 4.5rem;
+}
+.content-line-break{
+  max-width: 100%;
+  border-top: 1px solid var(--theme-gray-500);
+}
+.company-information{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+.company-contact-legal{
+  display: flex;
+  justify-content: space-between;
+  min-width: 30rem;
+}
+.company-information h4{
+  padding-top: 3rem;
+}
+.Company-Social-form h4{
+  color: var(--theme-gray-500);
+  font-size: 0.6rem;
+  padding-bottom: 1.5rem;
+}
+.Company-Social-form .icon i{
+  color: var(--theme-gray-700);
+  padding: 0.2rem;
+}
+.mailbox{
+  padding: 1.5rem 0;
+}
+.email{
+  min-width: 11rem;
+  min-height: 2rem;
+  border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+  background-color: var(--theme-gray-800);
+  display: flex;
+  align-items: center;
+}
+form{
+  display: flex;
+  align-items: center;
+}
+form input{
+  background-color: transparent;
+  color: var(--theme-gray-500);
+  font-size: 0.7rem;
+  border: none;
+  min-width: 9.7rem;
+  min-height: 1.7rem;
+}
+form i{
+  background-color: transparent;
+  color: var(--theme-white);
+  padding: 0 0.4rem 0 0.6rem;
+}
+form button{
+  min-width: 5rem;
+  min-height: 2rem;
+  border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+  background-color: var(--gradient-3);
+  color: var(--theme-white);
+  border: none;
+  margin-left: 0.5rem;
+  font-size: 0.55rem;
+  font-weight: 900;
+  letter-spacing: 0.02rem;
+  cursor: pointer;
+}
+.copyright-themewagoon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+
+}
+.copyright-themewagoon p{
+  font-size: 0.7rem;
+  color: var(--theme-gray-100);
+}
+.copyright-themewagoon i{
+  padding: 0 0.4rem;
+  font-size: .8rem;
+  justify-content: end;
+}
+.copyright-themewagoon span{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.copyright{
+  display: flex;
+  align-items: center;
+}
+.copyright i{
+  color: var(--theme-white);
+  background-color: transparent;
+}
+.themewagoon{
+  display: flex;
+  align-items: center;
+}
+.themewagoon i{
+  color: var(--theme-primary);
+  background-color: transparent;
+}
+.themewagoon span{
+  padding-left: .4rem;
+}
+/* ===============================media queries========================= */
+/* @media (max-width: 1200px){
+.are-you-straving-content{
+  margin-left: 9.5rem;
+}
+.straving-logo{
+  left: 48.5rem;
+}
+.food-deal-grid {
+  margin-left: 9.1rem;
+}
+.popular-items-flex {
+  margin-right: 0.7rem;
+}
+.featured-resturants-grid {
+  margin-right: 10.2rem;
+}
+#featured-resturants .view-all{
+  margin-right: 35.1rem;
+}
+.search-by-food-grid {
+  margin-left: 8.5rem;
+}
+#search-by-food .search-view-all {
+  margin-left: 9.7rem;
+}
+.deal-crispy-card {
+  margin-left: 9.4rem;
+}
+.footer-content {
+  margin-left: 7.8rem;
+}
+}
+@media (max-width: 1024px){
+.navbar {
+  margin-left: 4.5rem;
+}
+.are-you-straving-content {
+  margin-left: 4rem;
+}
+.straving-logo {
+  left: 43rem;
+}
+.food-deal-grid {
+  margin-left: 3.6rem;
+}
+#how-does-it-work h1 {
+  margin-left: 1rem;
+}
+.how-does-it-work-grid {
+  margin-left: 6rem;
+}
+#popular-items h1 {
+  margin-left: 1rem;
+}
+.popular-items-flex {
+  margin-right: 1.2rem;
+  transform: scaleX(0.9);
+}
+#featured-resturants h1 {
+  margin-left: 1rem;
+}
+.featured-resturants-grid {
+  margin-right: 5rem;
+}
+#featured-resturants .view-all {
+  margin-right: 28.8rem;
+}
+#search-by-food .search-view-all {
+  margin-left: 3.5rem;
+}
+.search-by-food-grid {
+  margin-left: 2.5rem;
+}
+.daily-discount-content {
+  left: 7.1rem;
+}
+.install {
+  left: 41.1rem;
+}
+.your-order img {
+  left: 7.1rem;
+}
+.deal-crispy-card {
+  margin-left: 3.6rem;
+}
+.best-deal-content {
+  margin: 0 17rem;
+}
+.footer-content {
+  margin-left: 2.7rem;
+  transform: scaleX(0.9);
+}
+}
+@media (max-width: 992px){
+  .navbar {
+    margin-left: 6.5rem;
+}
+.are-you-straving-content {
+  margin-left: 5rem;
+  transform: scaleX(0.9);
+}
+.straving-logo {
+  left: 41rem;
+}
+.food-deal-grid {
+  margin-left: 4.4rem;
+  transform: scaleX(0.9);
+}
+} */
+
+
+
+
+
+
