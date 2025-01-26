@@ -117,25 +117,6 @@ nav{
   margin-right: 0.6rem;
   font-size: 0.7rem;
 }
-/* ==============================toggle button====================== */
-.toggle-btn{
-  /* display: none; */
-}
-#checkbtn{
-  float: right;
-  /* display: none; */
-}
-/* #checkbtn img{
-  max-height: 2.7rem;
-  margin: 0.3rem 1.5rem 1rem 0rem;
-}
-#check{
-  display: none;
-}
-nav ul{
-  max-width: 100%;
-  min-height: 50vh;
-} */
 /* -------------------------------header-are-you-straving--------------------- */
 .are-you-straving{
   max-width: 100%;
@@ -145,7 +126,7 @@ nav ul{
 }
 .are-you-straving-content{
   position: absolute;
-  margin-left: 8.9rem;
+  margin-left: 9rem;
   padding-top: 6rem;
 }
 .are-you-straving-content h1{
@@ -247,7 +228,7 @@ nav ul{
   position: absolute;
   max-height: 16.03rem;
   min-width: 12rem;
-  left: 48.4rem;
+  left: 48rem;
   top: 8rem;
   overflow: hidden;
 }
@@ -256,7 +237,7 @@ nav ul{
 }
 .straving-logo:hover{
   overflow: visible;
-  top: 6rem;
+  top: 1rem;
 }
 /* ===============================food-deal-card======================== */
 #food-deal{
@@ -375,6 +356,7 @@ nav ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: -13rem;
 }
 #popular-items .less-greater-icon{
   padding: 2rem;
@@ -395,6 +377,9 @@ nav ul{
   font-size: x-large;
   font-weight: bold;
 }
+#popular-items .less-greater-icon:nth-child(1){
+  margin-left: 12.5rem;
+}
 .popular-items-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -402,7 +387,7 @@ nav ul{
   max-width: 57.6rem;
 }
 .popular-items-card-main img{
-  max-width: 11.23rem;
+  max-width: 10.23rem;
   border-radius: 0.5rem;
   padding-bottom: 0.2rem;
 }
@@ -451,7 +436,7 @@ nav ul{
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  max-width: 57rem;
+  max-width: 53rem;
   column-gap: 0.5rem;
   row-gap: 2.5rem;
   margin: auto;
@@ -460,7 +445,7 @@ nav ul{
   position: relative;
 }
 .featured-resturants-main img{
-  width: 14rem;
+  width: 13rem;
   border-radius: 0.7rem;
 }
 .featured-resturants-card .discount{
@@ -468,7 +453,7 @@ nav ul{
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 16.1rem;
+  bottom: 15.1rem;
 }
 .featured-resturants-card .discount img{
   height: 0.6rem;
@@ -667,15 +652,14 @@ nav ul{
   /* ----------------------------install-the-app------------------------------------- */
   #install-the-app{
     background-color: var(--theme-primary);
-    min-width: 100%;
+    max-width: 100%;
     min-height: 41rem;
     position: relative;
     z-index: -1;
   
   }
   .install-the-app-frame img{
-    max-width: 135.6%;
-    margin-left: -16rem;
+    max-width: 100%;
     min-height: 37.8rem;
     position: absolute;
   }
@@ -688,7 +672,7 @@ nav ul{
     border-radius: 2rem;
     background-color: var(--theme-white);
     position: absolute;
-    left: 12.9rem;
+    left: 13rem;
     margin-top: 5rem;
     box-shadow: var(--object-shadow);
   }
@@ -729,7 +713,7 @@ nav ul{
     position: absolute;
     max-height: 29.8rem;
     bottom: -9rem;
-    left: 12.9rem;
+    left: 13rem;
   }
   
   .install h1{
@@ -765,7 +749,7 @@ nav ul{
   /* -----------------------------deal-crispy--------------------- */
 #deal-crispy{
   max-width: 100%;
-  min-height: 72rem;
+  min-height: 75rem;
   padding: 5rem 0 0 0;
   background-color: var(--theme-white);
 }
@@ -838,8 +822,8 @@ nav ul{
   position: relative;
 }
 #best-deal img{
-  width: 100%;
-  height: 20rem;
+  max-width: 100%;
+  min-height: 20rem;
 }
 .best-deal-content{
   height: 14rem;
@@ -850,7 +834,7 @@ nav ul{
   align-items: center;
   position: absolute;
   top: 3rem;
-  margin: 0 21rem;
+  margin: 0 20rem;
 }
 .best-deal-content h1{
   text-align: center;
@@ -886,7 +870,6 @@ footer{
   min-height: 42rem;
 }
 .footer-content{
-  min-height: 35rem;
   max-width: 57rem;
   margin: auto;
 }
@@ -931,9 +914,10 @@ footer .footer-content .cities{
   font-size: 0.6rem;
   padding-bottom: 1.5rem;
 }
-.Company-Social-form .icon i{
-  color: var(--theme-gray-700);
-  padding: 0.2rem;
+.Company-Social-form .icon img{
+  max-width: 1rem;
+  min-height: 1rem;
+  margin-right: 0.2rem;
 }
 .mailbox{
   padding: 1.5rem 0;
@@ -958,9 +942,9 @@ form input{
   min-width: 9.7rem;
   min-height: 1.7rem;
 }
-form i{
-  background-color: transparent;
-  color: var(--theme-white);
+form img{
+  max-width: 1.8rem;
+  min-height: 1.8rem;
   padding: 0 0.4rem 0 0.6rem;
 }
 form button{
@@ -987,10 +971,8 @@ form button{
   font-size: 0.7rem;
   color: var(--theme-gray-100);
 }
-.copyright-themewagoon i{
-  padding: 0 0.4rem;
-  font-size: .8rem;
-  justify-content: end;
+.copyright-themewagoon img{
+  padding: 0 0.2rem;
 }
 .copyright-themewagoon span{
   font-size: 0.8rem;
@@ -1000,131 +982,24 @@ form button{
   display: flex;
   align-items: center;
 }
-.copyright i{
-  color: var(--theme-white);
+.copyright img{
   background-color: transparent;
+  max-width: 1rem;
+  min-height: 1rem;
 }
 .themewagoon{
   display: flex;
   align-items: center;
 }
-.themewagoon i{
-  color: var(--theme-primary);
+.themewagoon img{
   background-color: transparent;
+  max-width: 1rem;
+  min-height: 1rem;
 }
 .themewagoon span{
   padding-left: .4rem;
 }
-/* ===============================media queries========================= */
-/* @media (max-width: 1200px){
-.are-you-straving-content{
-  margin-left: 9.5rem;
-}
-.straving-logo{
-  left: 48.5rem;
-}
-.food-deal-grid {
-  margin-left: 9.1rem;
-}
-.popular-items-flex {
-  margin-right: 0.7rem;
-}
-.featured-resturants-grid {
-  margin-right: 10.2rem;
-}
-#featured-resturants .view-all{
-  margin-right: 35.1rem;
-}
-.search-by-food-grid {
-  margin-left: 8.5rem;
-}
-#search-by-food .search-view-all {
-  margin-left: 9.7rem;
-}
-.deal-crispy-card {
-  margin-left: 9.4rem;
-}
-.footer-content {
-  margin-left: 7.8rem;
-}
-}
-@media (max-width: 1024px){
-.navbar {
-  margin-left: 4.5rem;
-}
-.are-you-straving-content {
-  margin-left: 4rem;
-}
-.straving-logo {
-  left: 43rem;
-}
-.food-deal-grid {
-  margin-left: 3.6rem;
-}
-#how-does-it-work h1 {
-  margin-left: 1rem;
-}
-.how-does-it-work-grid {
-  margin-left: 6rem;
-}
-#popular-items h1 {
-  margin-left: 1rem;
-}
-.popular-items-flex {
-  margin-right: 1.2rem;
-  transform: scaleX(0.9);
-}
-#featured-resturants h1 {
-  margin-left: 1rem;
-}
-.featured-resturants-grid {
-  margin-right: 5rem;
-}
-#featured-resturants .view-all {
-  margin-right: 28.8rem;
-}
-#search-by-food .search-view-all {
-  margin-left: 3.5rem;
-}
-.search-by-food-grid {
-  margin-left: 2.5rem;
-}
-.daily-discount-content {
-  left: 7.1rem;
-}
-.install {
-  left: 41.1rem;
-}
-.your-order img {
-  left: 7.1rem;
-}
-.deal-crispy-card {
-  margin-left: 3.6rem;
-}
-.best-deal-content {
-  margin: 0 17rem;
-}
-.footer-content {
-  margin-left: 2.7rem;
-  transform: scaleX(0.9);
-}
-}
-@media (max-width: 992px){
-  .navbar {
-    margin-left: 6.5rem;
-}
-.are-you-straving-content {
-  margin-left: 5rem;
-  transform: scaleX(0.9);
-}
-.straving-logo {
-  left: 41rem;
-}
-.food-deal-grid {
-  margin-left: 4.4rem;
-  transform: scaleX(0.9);
-}
-} */
+
 
 
 
