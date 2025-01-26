@@ -358,6 +358,10 @@
     }
  }
  @media (max-width: 1024px){
+    .root-container {
+        max-width: 100vw;
+        min-height: 100vh;
+    }
     nav {
         transform: scale(0.7);
     }
